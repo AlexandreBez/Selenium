@@ -1,0 +1,13 @@
+configs\BasePage.class
+configs\BaseTest.class
+configs\DSL.class
+page_objects\CatalogPage.class
+test_cases\hands_on.class
+configs\Properties.class
+configs\DriverFactory.class
+configs\Browsers.class
+suites\HandsOnSuite.class
+configs\DriverFactory$2.class
+page_objects\LoginPage.class
+configs\DriverFactory$1.class
+page_objects\RegisterPage.class
