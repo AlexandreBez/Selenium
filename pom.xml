@@ -5,7 +5,7 @@
   <version>1.0.0</version>
   
   <build>
-  	<testSourceDirectory>src</testSourceDirectory>
+  	<testSourceDirectory>src/test</testSourceDirectory>
   	<plugins>
   		<plugin>
     		<groupId>org.apache.maven.plugins</groupId>
@@ -13,45 +13,105 @@
     		<version>3.5.2</version>
     		<configuration>
     			<includes>
-    				<include>com/suites/*.java</include>
+    				<include>suites/*.java</include>
     			</includes>
     			<parallel>all</parallel>
-    			<threadCount>3</threadCount>
+    			<threadCount>4</threadCount>
     		</configuration>
   		</plugin>
   	</plugins>
   </build>
   
   <dependencies>
+  
+  	<!-- SELENIUM -->
   	<dependency>
 	    <groupId>org.seleniumhq.selenium</groupId>
 	    <artifactId>selenium-java</artifactId>
-	    <version>4.28.1</version>
+	    <version>4.29.0</version>
 	</dependency>
+	
+	<!-- APACHE POI -->
 	<dependency>
 	    <groupId>org.apache.poi</groupId>
 	    <artifactId>poi</artifactId>
 	    <version>5.4.0</version>
 	</dependency>
 	
+	
+	<!-- JUNIT 5 -->
 	<dependency>
         <groupId>org.junit.jupiter</groupId>
         <artifactId>junit-jupiter-api</artifactId>
-        <version>5.9.2</version>
-        <scope>test</scope>
+        <version>5.11.3</version>
     </dependency>
 
     <dependency>
         <groupId>org.junit.jupiter</groupId>
         <artifactId>junit-jupiter-engine</artifactId>
-        <version>5.9.2</version>
+        <version>5.11.3</version>
     </dependency>
+    
+    <dependency>
+        <groupId>org.junit.jupiter</groupId>
+        <artifactId>junit-jupiter-migrationsupport</artifactId>
+        <version>5.11.3</version>
+    </dependency>
+    
+     <dependency>
+        <groupId>org.junit.jupiter</groupId>
+        <artifactId>junit-jupiter-params</artifactId>
+        <version>5.11.3</version>
+    </dependency>
+    
+	<dependency>
+	    <groupId>org.junit.platform</groupId>
+	    <artifactId>junit-platform-commons</artifactId>
+	    <version>1.12.0</version>
+	</dependency>
+	
+	<dependency>
+	    <groupId>org.junit.platform</groupId>
+	    <artifactId>junit-platform-runner</artifactId>
+	    <version>1.11.3</version>
+	</dependency>
+	
+	<dependency>
+	    <groupId>org.junit.platform</groupId>
+	    <artifactId>junit-platform-launcher</artifactId>
+	    <version>1.11.3</version>
+	</dependency>
+	
+	<dependency>
+	    <groupId>org.junit.platform</groupId>
+	    <artifactId>junit-platform-suite-engine</artifactId>
+	    <version>1.11.3</version>
+	</dependency>
+	
+	<dependency>
+	    <groupId>org.junit.platform</groupId>
+	    <artifactId>junit-platform-engine</artifactId>
+	    <version>1.11.3</version>
+	</dependency>
+	
+	<dependency>
+    <groupId>org.junit.platform</groupId>
+	    <artifactId>junit-platform-suite-commons</artifactId>
+	    <version>1.11.3</version>
+	</dependency>
+	
+	<dependency>
+	    <groupId>org.junit.platform</groupId>
+	    <artifactId>junit-platform-suite-api</artifactId>
+	    <version>1.11.3</version>
+	</dependency>
 
     <dependency>
         <groupId>org.junit.vintage</groupId>
         <artifactId>junit-vintage-engine</artifactId>
-        <version>5.9.2</version>
+        <version>5.11.3</version>
     </dependency>
 
   </dependencies>
+  
 </project>
